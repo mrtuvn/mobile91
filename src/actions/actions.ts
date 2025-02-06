@@ -1,6 +1,7 @@
 'use server'
 
 import prisma from '@/lib/db'
+import crypto from 'crypto'
 
 const getImageIds = async () => {
   const images = await prisma.image.findMany()

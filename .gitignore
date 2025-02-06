@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# DB
+dev.db           // Ignores the specific file
+database/        // Ignores the entire directory and its contents
+*.db  
