@@ -61,7 +61,7 @@ export default function CreatePost() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      <div>
+      <div className="p-3">
         <FileUploaderRegular
           sourceList="local, camera, facebook, gdrive"
           cameraModes="video, photo"
