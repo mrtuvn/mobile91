@@ -1,0 +1,2 @@
+folder, lowercase
+component: Capitalize first letter
