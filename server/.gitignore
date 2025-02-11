@@ -45,5 +45,5 @@ dev.db           // Ignores the specific file
 database/        // Ignores the entire directory and its contents
 *.db  
 
-media
+media/*
 dist
