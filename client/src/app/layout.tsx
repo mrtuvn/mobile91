@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter, Be_Vietnam_Pro } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
@@ -10,15 +10,9 @@ import { baseOpenGraph } from '@/app/shared-metadata'
 // import dynamic from 'next/dynamic'
 import Header from '@/components/common/Header'
 import Footer from '../components/common/Footer'
-//const Header = dynamic(() => import('@/components/header'), { ssr: false })
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const bePro = Be_Vietnam_Pro({
+  weight: '400',
   subsets: ['latin'],
 })
 
@@ -35,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${bePro.className} antialiased`}>
         <Toaster />
         <ThemeProvider
           attribute="class"
