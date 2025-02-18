@@ -1,11 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-} */
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 180rem;
+}
 
 @layer base {
   :root {
@@ -73,7 +72,6 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
   }
 }
 
