@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import React from 'react'
 import Bunny from '../components/dynamic/Counter'
 
 //import dynamic from 'next/dynamic'
@@ -15,7 +14,7 @@ export default function Home() {
     <>
       <p className="mx-auto text-center">Homepage!</p>
       <div>
-        <Bunny />
+        <Bunny />{' '}
       </div>
     </>
   )
