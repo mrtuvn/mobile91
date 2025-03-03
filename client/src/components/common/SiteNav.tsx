@@ -6,12 +6,16 @@ import { usePathname } from 'next/navigation'
 const siteRoutes = [
   {
     href: '/',
-    label: 'Home',
+    label: 'Trang chủ',
   },
   {
     href: '/products',
-    label: 'Products',
+    label: 'Sản phẩm mới',
   },
+  // {
+  //   href: '/sales',
+  //   label: 'Khuyến mãi',
+  // },
 ]
 
 export default function SiteNav() {

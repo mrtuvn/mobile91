@@ -1,9 +1,21 @@
 @import 'tailwindcss';
 
+/* 
+.space-y-10 (parent)
+  >> child (will have margin in any childs)
+*/
+
 @theme {
+  --default-font-family: 'Be Vietnam Pro, Be Vietnam Pro Fallback';
+  --default-color: #000;
+  --default-font-size: 16px;
+  --default-font-weight: 400;
+  --default-letter-spacing: -0.01em;
   --breakpoint-xs: 480px;
   --breakpoint-3xl: 120rem;
   --breakpoint-4xl: 180rem;
+  --color-footer: #eef7ff;
+  --color-content: #fff;
 }
 
 @layer base {
@@ -70,8 +82,28 @@
   }
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: var(--defautl-font-weight);
+  font-family: var(--default-font-family);
+  color: var(--default-color);
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @apply relative min-w-[320px];
+}
+
 @layer base {
   body {
+  }
+}
+
+@layer utilities {
+  .radientx {
+    @apply bg-gradient-to-r from-red-600 via-orange-500 to-red-600;
   }
 }
 

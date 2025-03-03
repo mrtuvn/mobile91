@@ -5,8 +5,8 @@ import Bunny from '../components/dynamic/Counter'
 //const Bunny = dynamic(() => import('@/components/dynamic/Bunny'), { ssr: false })
 
 export const metadata: Metadata = {
-  title: 'Trang chủ',
-  description: 'Trang chủ của shop',
+  title: 'Gia dụng',
+  description: 'Gia dung tap hoa',
 }
 
 export default function Home() {

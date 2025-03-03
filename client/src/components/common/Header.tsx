@@ -1,9 +1,7 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
-import SiteNav from './SiteNav'
-import { data } from '../../settings/website-data'
 import { ModeToggle } from '../mode-toggle'
+import SiteNav from './SiteNav'
 
 import { useAppContext } from '@/app/app-provider'
 import ButtonLogout from '@/components/button-logout'
@@ -11,11 +9,9 @@ import ButtonLogout from '@/components/button-logout'
 const Header = () => {
   const { user } = useAppContext()
   return (
-    <header className="flex flex-col items-center justify-between space-y-2 border-b border-black/10 px-14 pb-9 lg:flex-row">
+    <header className="flex flex-col items-center justify-between border-b border-black/10 lg:flex-row p-[24px]">
       <section className="text-center lg:text-left">
-        <h1 className="text-4xl font-bold">Your daily store of phones</h1>
-
-        <p className="text-xl opacity-90"> Store at {data.address} </p>
+        <h1 className="text-4xl font-bold">GDTN</h1>
 
         <SiteNav />
       </section>
@@ -36,10 +32,10 @@ const Header = () => {
           ) : (
             <>
               <li>
-                <Link href="/login">LOGIN</Link>
+                <Link href="/login">Đăng nhập</Link>
               </li>
               <li>
-                <Link href="/register">REGISTER</Link>
+                <Link href="/register">Đăng ký</Link>
               </li>
             </>
           )}
